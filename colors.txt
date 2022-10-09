@@ -1,0 +1,4 @@
+primary color #0092e4;
+black color #333;
+bg color #e4e9f7;
+white color #fff;
