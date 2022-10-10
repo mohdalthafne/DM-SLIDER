@@ -1,0 +1,21 @@
+let slides = document.querySelectorAll('.slide');
+let index = 0;
+
+function next(){
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+}
+
+function prev(){
+    slides[index].classList.remove('active');
+    index = (index - 1 + slides.length) % slides.length;
+    slides[index].classList.add('active')
+}
+let menuBar = document.querySelector('.navbar');
+let menuBtn = document.querySelector('.icons');
+
+menuBtn.onclick = () =>{
+    menuBar.classList.toggle('show');
+    menuBtn.classList.toggle('active');
+}

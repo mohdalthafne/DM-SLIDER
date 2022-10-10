@@ -1,0 +1,117 @@
+.services{
+    
+    .box{
+        margin: 15px 0;
+        width: 300px;
+        height: auto;
+        padding: 30px;
+        background: $white;
+        border-radius: .5rem;
+        box-shadow: 0 5px 2px rgba(0,0,0,0.1);
+        margin: 0 0 10px 0;
+        position: relative;
+        .icon{
+            height: 55px;
+            width: 55px;
+            opacity: 1;
+            i{
+                line-height: 55px;
+                font-size: 30px;
+                margin-left: 10px;
+            }    
+        }
+        h3{
+            margin: 15px 0 5px 0;
+            font-size: 2rem;
+            a{
+                color: $black;
+                transition: all .5s ease;
+            }
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            width: 100%;
+            border-bottom-left-radius: .5rem;
+            border-bottom-right-radius: .5rem;
+            opacity: 0;
+            transition: all .5s ease;
+        }
+        &:nth-child(1):hover::before{
+            opacity: 1;
+            background: hsl(174, 100%, 61%);
+        }
+        &:nth-child(1):hover{
+            h3{
+                a{
+                    &:hover{
+                        color: hsl(174, 100%, 61%);
+                    }
+                }
+            }
+        }
+        &:nth-child(1){
+            .icon{
+                background: hsla(174, 100%, 61%, 0.15);
+            }
+        }
+        &:nth-child(2){
+            .icon{
+                background: hsla(267, 76%, 57%, 0.15);
+            }
+        }
+        &:nth-child(2):hover::before{
+            opacity: 1;
+            background: hsl(267, 76%, 57%);
+        }
+        &:nth-child(2):hover{
+            h3{
+                a{
+                    &:hover{
+                        color: hsl(267, 76%, 57%);
+                    }
+                }
+            }
+        }
+        &:nth-child(3){
+            .icon{
+                background: hsla(17, 100%, 68%, 0.15);
+            }
+        }
+        &:nth-child(3):hover::before{
+            opacity: 1;
+            background: hsl(17, 100%, 68%);
+        }
+        &:nth-child(3):hover{
+            h3{
+                a{
+                    &:hover{
+                        color: hsl(17, 100%, 68%);
+                    }
+                }
+            }
+        }
+        &:nth-child(4){
+            .icon{
+                background: hsla(343, 98%, 60%, 0.15);
+            }
+        }
+        &:nth-child(4):hover::before{
+            opacity: 1;
+            background: hsl(343, 98%, 60%);
+        }
+        &:nth-child(4):hover{
+            h3{
+                a{
+                    &:hover{
+                        color: hsl(343, 98%, 60%);
+                    }
+                }
+            }
+        }
+    }
+}

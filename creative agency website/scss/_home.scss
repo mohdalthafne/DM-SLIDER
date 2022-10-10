@@ -1,0 +1,75 @@
+.home{
+    padding: 3rem 7%;
+    .box{
+        min-height: 70vh;
+        display: none;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        &.active{
+            display: flex;
+        }
+        .content{
+            flex: 1 1 42rem;
+            animation: fadeLeft .4s linear;
+            h2{
+                font-size: 5rem;
+                font-weight: 700;
+                color: $black;
+                span{
+                    text-decoration: underline $blue;
+                }
+            }
+            P{
+                font-size: 2em;
+                font-weight: 600;
+                color: $black;
+            }
+        }
+        .image{
+            flex: 1 1 42rem;
+            animation: fadeRight .4s linear;
+            img{
+                width: 85%;
+            }
+        }
+    }
+    .sl-btn{
+        position: relative;
+        i{
+            position: absolute;
+            font-size: 4rem;
+            background: $white;
+            height: 55px;
+            line-height: 55px;
+            width: 55px;
+            margin-top: 15px;
+            border-radius: .5rem;
+            color: $black;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all .5s ease;
+            &:hover{
+                color: $white;
+                background: $black;
+            }
+            &.fa-angle-left{
+                right: 75px;
+            }
+            &.fa-angle-right{
+                right: 5px;
+            }
+        }
+    }
+}
+@keyframes fadeLeft{
+    0%{
+        transform: translateX(-5rem);
+    }
+}
+@keyframes fadeRight{
+    0%{
+        transform: translateX(5rem);
+    }
+}

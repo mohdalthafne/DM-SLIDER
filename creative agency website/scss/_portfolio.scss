@@ -1,0 +1,16 @@
+.portfolio{
+    .row{
+        .image{
+            overflow: hidden;
+            img{
+                width: 310px;
+                border-radius: .5rem;
+                object-fit: cover;
+                transition: all .5s ease;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

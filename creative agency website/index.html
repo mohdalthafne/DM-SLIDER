@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative.. The Next Generation Technologies</title>
+
+    <!-- custom style file link -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- unicons cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="">Creative.</a>
+        </div>
+        
+        <div class="icons" id="icons">
+            <i class="fa-solid fa-bars menu-opn"></i>
+            <i class="fa-solid fa-xmark menu-clos"></i>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Feauters</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <section class="home">
+        <div class="box slide active">
+            <div class="content">
+                <h2>
+                    Building Digital 
+                    <span>Product</span>, Brand & 
+                    Experience
+                </h2>
+                <p>
+                    At <span>Creative.</span> we specialize in designing, building, shipping and scaling beautiful, usable products with blazing-fast efficiency
+                </p>
+                <a href="" class="btn btn-primary hs-bfr hs-afr"> <i class="fa-solid fa-play"></i> &nbsp; Behind The Scenes</a>
+            </div>
+            <div class="image">
+                <img src="./images/hero-banner-1.png" alt="">
+            </div>
+        </div>
+        <div class="box slide">
+            <div class="content">
+                <h2>
+                    Building A 
+                    <span>Future</span>, For Next Generation
+                </h2>
+                <p>
+                    At <span>Creative.</span> we specialize in designing, building, shipping and scaling beautiful, usable products with blazing-fast efficiency
+                </p>
+                <a href="" class="btn btn-primary hs-bfr hs-afr"> <i class="fa-solid fa-play"></i> &nbsp; Behind The Scenes</a>
+            </div>
+            <div class="image">
+                <img src="./images/hero-banner-2.png" alt="">
+            </div>
+        </div>
+        <div class="sl-btn">
+            <i class="fa-solid fa-angle-right" onclick="next()"></i>
+            <i class="fa-solid fa-angle-left" onclick="prev()"></i>
+        </div>
+    </section>
+
+    <section class="services">
+            <h2 class="heading">OUR <span>SERVICES</span></h2>
+                    <div class="row">
+                        <div class="box" style="color: hsl(174, 77%, 50%);">
+                            <div class="icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <h3><a href="">Product Managment</a></h3>
+                        </div>
+    
+                        <div class="box" style="color: hsl(267, 76%, 57%);">
+                            <div class="icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h3><a href="">Web & Mobile Development</a></h3>
+                            </div>
+                            <div class="box" style="color: hsl(17, 100%, 68%);">
+                                <div class="icon">
+                                    <i class="fa-solid fa-headset"></i>
+                                </div>
+                                <h3><a href="">Fast Customer Support</a></h3>
+                                </div>
+                                <div class="box" style="color: hsl(343, 98%, 60%);">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-bell"></i>
+                                    </div>
+                                    <h3><a href="">Fast Customer Support</a></h3>
+                                    </div>
+                    </div>
+    </section>
+
+    <section class="feauters">
+        <h2 class="heading">Why <span>Choose</span> Us?</h2>
+        <div class="box">
+            <div class="image">
+                <img src="./images/feautre-img.png" alt="">
+            </div>
+            <div class="content">
+                <h2>Specialist in aviding clients of financial <span>challenges</span></h2>
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam laudantium veritatis, obcaecati aspernatur quis fugiat provident harum accusamus iste aperiam ipsa molestiae ipsum explicabo doloribus maxime itaque dolore in! Corrupti, corporis nihil?</p>
+               <button class="btn btn-primary hs-bfr hs-afr"><i class="fa-solid fa-eye"></i> &nbsp; View Our Succes !</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <h2 class="heading">Our <span>Projects!</span></h2>
+        <div class="row">
+            <div class="image">
+                <img src="./images/p1.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="./images/p3.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="./images/p4.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="./images/p5.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="./images/p6.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="./images/p7.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="./images/p8.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <a href="" class="btn btn-primary hs-bfr hs-afr"><i class="fa-solid fa-eye"></i> &nbsp; View All Projects</a>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2 class="heading">Subscribe To <span>Newsletter</span></h2>
+        <div class="box">
+            <div class="content">
+                <h2>Subscribe Newsletter Get Latest <span>Updates</span> & <span>Deals</span></h2>
+                <form action="">
+                    <p>
+                        <input type="email" placeholder="Enter Your E-mail!" name="email" required>
+                        <button class="btn btn-primary hs-bfr hs-afr">Subscribe &nbsp; <i class="fa-solid fa-arrow-right"></i></button>
+                    </p>
+                </form>
+            </div>
+            <div class="image">
+                <img src="./images/newsletter-banner.png" alt="">
+            </div>
+        </div>
+    </section>
+    
+
+
+    <footer class="footer">
+       
+        <div class="bottom">
+            <center>
+                <span class="credit">Created By <a href="">Muhammed Althaf N.E</a> | </span>
+                <span class="fa-solid fa-copyright"></span> &nbsp;<span>2022 All Rights Reserved <a href="">Creative.</a></span>
+            </center>
+        </div>
+    </footer>
+
+    <!-- custom js file cdn link -->
+    <script src="./js/app.js"></script>
+</body>
+</html>

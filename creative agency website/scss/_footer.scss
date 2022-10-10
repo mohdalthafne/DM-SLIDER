@@ -1,0 +1,14 @@
+footer{
+    height: auto;
+    width: 100%;
+    background-color: $black;
+    padding: 10px 0;
+    span{
+        font-size: 1.5rem;
+        color: $white;
+        word-spacing: .5rem;
+        a{
+            color: $blue;
+        }
+    }
+}

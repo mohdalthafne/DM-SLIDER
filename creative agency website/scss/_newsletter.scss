@@ -1,0 +1,45 @@
+.newsletter{
+    padding: 3rem 7%;
+    .box{
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        .image{
+            flex: 1 1 42rem;
+            img{
+                width: 85%;
+            }
+        }
+        .content{
+            flex: 1 1 42rem;
+            h2{
+                font-size: 5rem;
+                font-weight: 700;
+                color: $black;
+                span{
+                    text-decoration: underline $blue;
+                }
+            }
+            form{
+                p{
+                    position: relative;
+                    input{
+                        width: 70%;
+                        height: 45px;
+                        border-radius: 25px;
+                        border: 2px solid $black;
+                        padding-left: 25px;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        color: $black;
+                        &::placeholder{
+                            color: $black;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
